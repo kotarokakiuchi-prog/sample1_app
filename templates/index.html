@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>行列式計算</title>
+</head>
+<body>
+
+<h2>行列式計算アプリ</h2>
+
+<form method="POST">
+<textarea name="matrix" rows="6" cols="30"
+placeholder="1 2
+3 4"></textarea>
+<br><br>
+<button type="submit">計算</button>
+</form>
+
+{% if result %}
+<h3>行列式: {{ result }}</h3>
+{% endif %}
+
+</body>
+</html>
